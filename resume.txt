@@ -1,0 +1,56 @@
+Radip Shrestha  
+Highland Heights, KY • (859) 287 -5362 • radip.crestha@gmail.com  
+Objective  
+Computer Science major grad uating in May 2026 with experience developing AI -driven 
+applications, real -time computer vision systems, and backend architectures. Seeking a full -time 
+Software Engineering role to build scalable services and deploy high -impact, intelligent software 
+soluti ons. 
+Technical Skills  
+Languages: Python, C++, Java, JavaScript, PHP, C#, SQL, NoSQL  
+Frameworks & Tools: Flask, REST API Development, Git, Linux, Nextcloud, Bash, AWS  
+Databases: PostgreSQL, MongoDB  
+Data & Visualiza tion: Pandas, NumPy, Matplotlib  
+System Administration: Ubuntu Server Setup, Networking, File Permissions, Privilege 
+Management, Environment Inheritance  
+Certifications: Microsoft C# Certification (in progress)  
+Projects  
+RAG Fitness Assistant  (Python, Flask, LangChain, ChromaDB, SQLite, HuggingFace 
+(Qwen 2.5 , Transformers, BitsAndBytes) and Chart.js. ) 
+• A local RAG system that generates personalized workouts using hybrid BM25 + vector 
+search over a custom exercise dataset.  
+• Automatically extracts weight and PR updates from chat and stores them in SQLite, powe ring 
+a real‑time progress dashboard.  
+• Implemented custom LLM interceptors to control state, prevent hallucinations, and enforce 
+structured multi‑day workout logic.  
+Real‑Time Exercise Classifier & Form Analyzer  (Python, MediaPipe, TensorFlow/Keras, 
+OpenCV ) 
+• Designed a Bi‑LSTM + Temporal Attention model to recognize 7 exercise types and generate 
+a continuous form‑quality score.  
+• Implemented a multi‑task learning pipeline using pose landmarks (33 points) for 
+simultaneous classification and form regression.  
+• Achi eved 90%+ accuracy with low‑latency inference using a sliding‑window buffer, enabling 
+smooth, real‑time feedback on consumer hardware.  
+Library Management System (PHP, Postgr eSQL, RBAC)  
+• Developed a full -stack library management platform with secure authentication and role -
+based access for Librarian and Member workflows.  
+• Built modules for cataloging, issuing/returning books, user accounts, and activity logging.  
+• Optimized Postgr eSQL queries and indexing strategies to improve catalog search 
+performance.  
+• Designed a clean, responsive dashboard to streamline daily operations.  
+Supplement Store Location Recommendation System (Python, DBSCAN, Geospatial 
+Analysis)  
+• Built a geospatial clus tering model using DBSCAN to identify optimal supplement store 
+locations based on gym density and competitor proximity.  
+• Processed and visualized spatial data using Pandas, NumPy, and Matplotlib.  
+• Generated density maps and cluster reports to support strateg ic business placement decisions.  
+Personal Cloud Server Deployment (Ubuntu, Nextcloud)  
+• Repurposed an old laptop into a secure, self -hosted cloud server using Nextcloud on Ubuntu.  
+• Configured remote access, user permissions, SSL, and automated backup routines . 
+• Documented the full deployment process for reproducibility and scalability.  
+Education  
+Northern Kentucky University — Bachelor of Science in Computer Science  
+Graduation: May 12, 2026  
+Minor: Computer & Information Technology  
+Relevant Coursework  
+Data Structures & Algorithms, Operating Systems, Database Systems, Software Engineering, 
+Computer Networks, Machine Learning  
