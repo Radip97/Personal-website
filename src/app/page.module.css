@@ -44,7 +44,7 @@
 
 .navLinks {
   display: flex;
-  gap: 2rem;
+  gap: 4.5rem;
   list-style: none;
   position: absolute;
   left: 50%;
@@ -52,7 +52,7 @@
 }
 
 .navLink {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: var(--foreground);
   text-decoration: none;
