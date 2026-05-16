@@ -56,7 +56,7 @@ export default function Home() {
       <section id="hero" className={`${uiStyles.section} ${pageStyles.hero}`}>
         <div className={pageStyles.heroContent}>
           <div className={pageStyles.heroText}>
-            <div className={pageStyles.heroSubtitle}>Hi I am</div>
+            <div className={pageStyles.heroSubtitle}>Hi, I'm</div>
             <div className={pageStyles.heroName}>Radip Shrestha</div>
             <h1 className={pageStyles.heroTitle}>Software <br/>Engineer</h1>
             
