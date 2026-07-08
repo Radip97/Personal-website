@@ -1,21 +1,11 @@
 :root {
   --background: #000000;
-  --foreground: #ffffff;
+  --foreground: #00ff66;
   --accent: #00ff66;
   --accent-hover: #00cc52;
-  --card-bg: #1e1e1e;
-  --card-border: #333333;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #f6f8fa;
-    --foreground: #24292f;
-    --accent: #0969da;
-    --accent-hover: #0349b4;
-    --card-bg: #ffffff;
-    --card-border: #d0d7de;
-  }
+  --card-bg: rgba(5, 15, 5, 0.75);
+  --card-border: rgba(0, 255, 102, 0.25);
+  --text-muted: #00aa44;
 }
 
 * {
@@ -26,19 +16,23 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--background);
 }
 
 html, body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), sans-serif;
+  font-family: var(--font-geist-mono), 'Courier New', Courier, monospace;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  animation: crt-flicker 0.15s infinite;
+  text-shadow: 0 0 2px rgba(0, 255, 102, 0.5);
 }
 
 a {
@@ -57,4 +51,57 @@ button {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+/* CRT Scanline Overlay */
+.scanline-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 0.35) 50%,
+    rgba(0, 0, 0, 0.35)
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 9999;
+  animation: scanline-move 1.2s linear infinite;
+}
+
+@keyframes scanline-move {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}
+
+@keyframes crt-flicker {
+  0% { opacity: 0.995; }
+  50% { opacity: 1; }
+  100% { opacity: 0.995; }
+}
+
+/* Custom Scrollbar for Hacker Console */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+  border-left: 1px solid rgba(0, 255, 102, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 102, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 102, 0.4);
 }

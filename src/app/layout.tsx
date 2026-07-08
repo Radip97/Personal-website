@@ -26,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
+        <div className="scanline-overlay" />
         <MatrixBackground />
         <main className="layout-main">
           {children}

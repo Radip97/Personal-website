@@ -7,100 +7,102 @@
 }
 
 .sectionTitle {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
   font-family: var(--font-geist-mono), monospace;
-  color: var(--foreground);
+  color: var(--accent);
+  text-shadow: 0 0 8px rgba(0, 255, 102, 0.4);
   position: relative;
   display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .sectionTitle::after {
   content: '';
   position: absolute;
-  width: 50%;
-  height: 4px;
-  bottom: -10px;
+  width: 60px;
+  height: 2px;
+  bottom: -8px;
   left: 0;
-  background: linear-gradient(90deg, var(--accent), transparent);
-  border-radius: 2px;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
 }
 
 .button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 4px;
   font-weight: 600;
-  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
   transition: all 0.3s ease;
-  font-family: var(--font-geist-sans), sans-serif;
+  font-family: var(--font-geist-mono), monospace;
   cursor: pointer;
+  text-align: center;
 }
 
 .buttonPrimary {
-  background-color: var(--accent);
-  color: #fff;
+  background-color: transparent;
+  color: var(--accent);
   border: 1px solid var(--accent);
-  box-shadow: 0 4px 14px rgba(187, 134, 252, 0.3);
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.2);
 }
 
 .buttonPrimary:hover {
-  background-color: var(--accent-hover);
-  border-color: var(--accent-hover);
+  background-color: rgba(0, 255, 102, 0.12);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(187, 134, 252, 0.4);
+  box-shadow: 0 0 18px rgba(0, 255, 102, 0.45);
 }
 
 .buttonSecondary {
   background-color: transparent;
-  color: var(--foreground);
-  border: 1px solid var(--card-border);
+  color: var(--text-muted);
+  border: 1px solid rgba(0, 255, 102, 0.2);
 }
 
 .buttonSecondary:hover {
   border-color: var(--accent);
   color: var(--accent);
   transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(0, 255, 102, 0.25);
 }
 
-/* Glassmorphism Card */
+/* Glassmorphism Console Card */
 .card {
-  background: rgba(30, 30, 30, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
+  background: rgba(5, 12, 5, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 255, 102, 0.25);
+  border-radius: 4px; /* Tactical square borders */
   padding: 1.5rem;
   transition: all 0.3s ease;
-}
-
-@media (prefers-color-scheme: light) {
-  .card {
-    background: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-  }
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.05);
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  border-color: rgba(187, 134, 252, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 0 18px rgba(0, 255, 102, 0.2);
+  border-color: var(--accent);
 }
 
-/* Badges for skills */
+/* Monospace command-parameter badges */
 .badge {
   display: inline-block;
-  padding: 0.4rem 0.8rem;
-  border-radius: 9999px;
-  font-size: 0.85rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 2px;
+  font-size: 0.75rem;
+  font-family: var(--font-geist-mono), monospace;
   font-weight: 500;
-  background: rgba(187, 134, 252, 0.1);
+  background: rgba(0, 255, 102, 0.04);
   color: var(--accent);
-  border: 1px solid rgba(187, 134, 252, 0.2);
+  border: 1px solid rgba(0, 255, 102, 0.2);
   transition: all 0.2s ease;
 }
 
 .badge:hover {
-  background: rgba(187, 134, 252, 0.2);
-  transform: scale(1.05);
+  background: rgba(0, 255, 102, 0.15);
+  border-color: var(--accent);
+  box-shadow: 0 0 8px rgba(0, 255, 102, 0.2);
 }
