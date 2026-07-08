@@ -29,8 +29,8 @@ export default function MatrixBackground() {
       ctx.fillStyle = "rgba(0, 0, 0, 0.06)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      // Neon orange color matching '--accent' #fd6f00
-      ctx.fillStyle = "#fd6f00";
+      // Neon green color matching '--accent' #00ff66
+      ctx.fillStyle = "#00ff66";
       ctx.font = "14px Courier New, monospace";
 
       for (let i = 0; i < drops.length; i++) {

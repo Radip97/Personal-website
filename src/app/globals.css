@@ -1,8 +1,8 @@
 :root {
   --background: #000000;
   --foreground: #ffffff;
-  --accent: #fd6f00;
-  --accent-hover: #e66500;
+  --accent: #00ff66;
+  --accent-hover: #00cc52;
   --card-bg: #1e1e1e;
   --card-border: #333333;
 }
