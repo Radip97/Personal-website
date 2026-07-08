@@ -7,6 +7,12 @@ export default function Home() {
 
   const resumeProjects = [
     {
+      name: "Local Multi-Agent Orchestrator",
+      description: "An autonomous multi-agent developer loop running locally on consumer hardware. Coordinates a 9B Coder model and a 1.5B Debugger model to patch code, inspect test traces, filter hallucinations, and compile retro web apps from scratch.",
+      tags: ["Python", "Git", "Multi-Agent Systems", "Local LLMs", "Regex Filter"],
+      githubUrl: "https://github.com/Radip97/Local-LLM-Multi-Agent-Code-Orchestrator"
+    },
+    {
       name: "RAG Fitness Assistant",
       description: "A local RAG system that generates personalized workouts using hybrid BM25 + vector search. Extracts weight/PR updates from chat to power a real-time dashboard. Uses custom LLM interceptors to prevent hallucinations.",
       tags: ["Python", "Flask", "LangChain", "Qwen 2.5"],
